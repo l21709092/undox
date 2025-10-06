@@ -11,7 +11,7 @@ app.use(cors());
 let users = JSON.parse(fs.readFileSync('./data/users.json', 'utf-8') || '{}');
 //endpoint to register a new user
 app.post('/register', (req, res) => {
-    //recieve public key +hashes
+    //recieve public key + hashes
 // save to users object and write back to users.json
 });
 
