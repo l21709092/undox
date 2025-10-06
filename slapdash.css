@@ -2,53 +2,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 40px 20px;
 }
-.zombie-container{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    animation: fadeIn 1.2s ease-in ;
+header {
+    margin-bottom: 80px;;
 }
-.hype-logo{
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-.subtext{
-    font-size: 1.2rem;
-    opacity: 0.8;
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-.boom-button {
-    padding: 12px 30px;
-    border-radius: 10px;
-    border: none;
-    background-color: #1a73e8;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+header p{
+    font-size: 1.2rem;
+    color: #cccccc; 
 }
-.boom-button:hover {
-    background-color: #1669c1;
+
+button, .cta-btn {
+    background-color: #6b46c1;
+    color: white;
+    padding: 12px 24 px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+button:hover, .cta-btn:hover {
+    background-color: #8257e5;
     transform: scale(1.05);
 }
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+.section {
+    width: 80%;
+    max-width: 900px;
+    margin: 60px 0;
+}
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 20px;
+}
+.feature-box {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    transition: 0.3s ease;
+}
+.feature-box:hover {
+    transform: translateY(-5px);
+    background: #242424;
+}
+footer {
+    margin-top: 80px;
+    font-size: 0.9rem;
+    color: #777;
 }
